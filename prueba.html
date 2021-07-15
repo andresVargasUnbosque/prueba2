@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Page Title</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <!--FONT FAMILY-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet" />
+    </head>
+    <style>
+        .responsive {
+            width: 100%;
+            height: auto;
+        }
+
+        .button {
+            background-color: #27ae60; /* Green */
+            border: none;
+            border-radius: 10px;
+            color: white;
+            padding: 14px 12px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+          }
+    </style>
+
+    <body style="">
+        <br>
+        <div style="padding-left: 20%; padding-right: 20%;">
+            <img border="0" class="responsive" width="100%" height="600" src="https://fedegolfsb-fedegolf.cs16.force.com/resource/1623946102000/InscripcionAprobada?">
+            <br/>
+            <span style="background-color: rgb(250,250,250); color: #808080; font-size: 20px; font-family: roboto,helvetica neue,helvetica,arial,sans-serif!important;">
+                <br/>
+                <b> </b> ¡Felicitaciones! se ha aprobado tu inscripción al torneo  + nombreTorneo +
+                <br/> <br/>
+                Si deseas realizar el pago de la inscripción, por favor ingresa al siguiente link: 
+                
+                <a href="https://fedegolf--fedegolfsb--c.visualforce.com/apex/pagoTorneos?Torneo='+ ObjInscripciones.Torneo__c +"  class="button"> Realizar pago </a>
+                
+            </span>
+        </div>
+    </body>
+</html>
